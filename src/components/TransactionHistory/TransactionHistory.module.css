@@ -1,0 +1,26 @@
+.transactionHistory{
+    border-collapse: collapse;
+    width: 750px;
+   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.transactionHead{
+    height: 50px;
+    text-transform: uppercase;
+    color: #fff;
+   background-color: rgba(106, 138, 152, 0.678); 
+}
+.transactionHead th:not(:last-child){
+border-right: 1px solid #fff;
+}
+.transactionRow{
+    height: 50px;
+    text-align: center;
+    color: gray;
+}
+.transactionRow:nth-child(odd) {
+  background-color: rgba(106, 138, 152, 0.259);
+}
+.transactionRow td:not(:last-child){
+    border-right: 1px solid rgba(106, 138, 152, 0.259);
+}
