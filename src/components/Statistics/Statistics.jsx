@@ -1,13 +1,11 @@
 import PropTypes from 'prop-types';
-// import css from './Profile.module.css';
 import {Title, StatisticsBox, StatList, Item, Label, Percentage} from './Statistics.styled'
-// import { getRandomHexColor } from 'utils';
 
 export const Statistics = ({ title, stats }) => {
   return (
     <StatisticsBox>
-      <Title>{title}</Title>
-
+      {title && <Title>{title}</Title>}
+      
       <StatList>
         {stats.map(({ id, label, percentage }) => (
           <Item key={id} id={id}>
